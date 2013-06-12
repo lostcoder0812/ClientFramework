@@ -1,5 +1,6 @@
 #pragma once
-#include "imodule.h"
+#include "ILog.h"
+
 
 namespace log4cplus
 {
@@ -9,7 +10,7 @@ namespace log4cplus
 enum enumLogLevel{LogLevel_Trace,LogLevel_Debug,LogLevel_Info,LogLevel_Warn,LogLevel_Error,LogLevel_Fatal};
 
 class CLog :
-	public IModule
+	public ILog
 {
 public:
 	CLog(void);

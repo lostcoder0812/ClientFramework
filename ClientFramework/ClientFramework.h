@@ -11,7 +11,7 @@
 #include "resource.h"		// 主符号
 #include "IModule.h"
 
-interface ILog;
+#include "ILog.h"
 // CClientFrameworkApp:
 // 有关此类的实现，请参阅 ClientFramework.cpp
 //
