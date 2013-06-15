@@ -3,6 +3,12 @@
 #include "stdafx.h"
 #include "IModule.h"
 
+
+
+//	配置文件操作接口
+//	配置文件分为三层:File,Section,Item
+
+
 interface IConfig : public IModule
 {
 public:
@@ -14,8 +20,18 @@ public:
 
 	// IConfig接口
 
+	// 查找
+	virtual BOOL FindConfig(const TCHAR* ConfigName);
+	virtual BOOL FindSection(const TCHAR* szSectionName);
+	virtual BOOL FindItem(const TCHAR* szItemName);
+
+
+	// config操作
+	virtual int AddConfig(const TCHAR* szConfigPath,const TCHAR* szConfigName);
+	virtual int SaveConfig(const TCHAR* szConfigName);
+
 	// Section操作
-	virtual int AddSection(const TCHAR* szSectionName, const TCHAR* szConfigFilePath);
+	virtual int SetSection(const TCHAR* szSectionName, const TCHAR* szConfigFilePath);
 	virtual int ClearSection(const TCHAR* szSectionName);
 	virtual int RemoveSection(const TCHAR* szSectionName);
 	// 获取整个Section的配置

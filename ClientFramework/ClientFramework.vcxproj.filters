@@ -60,6 +60,9 @@
     <ClInclude Include="IConfig.h">
       <Filter>Config</Filter>
     </ClInclude>
+    <ClInclude Include="FileConfigImpl.h">
+      <Filter>Config</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClientFramework.cpp">
@@ -73,6 +76,9 @@
     </ClCompile>
     <ClCompile Include="Log.cpp">
       <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="FileConfigImpl.cpp">
+      <Filter>Config</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

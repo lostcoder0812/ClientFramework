@@ -105,6 +105,7 @@
   <ItemGroup>
     <ClInclude Include="ClientFramework.h" />
     <ClInclude Include="ClientFrameworkDlg.h" />
+    <ClInclude Include="FileConfigImpl.h" />
     <ClInclude Include="IConfig.h" />
     <ClInclude Include="ILog.h" />
     <ClInclude Include="IModule.h" />
@@ -116,6 +117,7 @@
   <ItemGroup>
     <ClCompile Include="ClientFramework.cpp" />
     <ClCompile Include="ClientFrameworkDlg.cpp" />
+    <ClCompile Include="FileConfigImpl.cpp" />
     <ClCompile Include="Log.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
